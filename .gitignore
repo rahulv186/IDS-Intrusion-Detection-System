@@ -1,5 +1,11 @@
 venv/
 node_modules/
 .env
+
 *.key
+*.crt
+*.csr
+*.srl
+
 __pycache__/
+.idea/
