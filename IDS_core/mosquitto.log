@@ -1,0 +1,170 @@
+1782330657: mosquitto version 2.1.2 starting
+1782330657: Config loaded from Certs/mosquitto.conf.
+1782330657: Bridge support available.
+1782330657: Persistence support available.
+1782330657: TLS support available.
+1782330657: TLS-PSK support available.
+1782330657: Websockets support available.
+1782330657: Opening ipv6 listen socket on port 8883.
+1782330657: Opening ipv4 listen socket on port 8883.
+1782330657: mosquitto version 2.1.2 running
+1782330658: New connection from ::1:52396 on port 8883.
+1782330658: New client connected from ::1:52396 as auto-AC12E1CE-4668-336E-3385-E4E1A14832EF (p4, c1, k60).
+1782330658: No will message specified.
+1782330658: Client auto-AC12E1CE-4668-336E-3385-E4E1A14832EF negotiated TLSv1.3 cipher TLS_AES_256_GCM_SHA384
+1782330658: Sending CONNACK to auto-AC12E1CE-4668-336E-3385-E4E1A14832EF (0, 0)
+1782330658: Received SUBSCRIBE from auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330658: 	home/air_quality_sensor (QoS 0)
+1782330658: auto-AC12E1CE-4668-336E-3385-E4E1A14832EF 0 home/air_quality_sensor
+1782330658: Sending SUBACK to auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330679: New connection from ::1:52398 on port 8883.
+1782330679: New client connected from ::1:52398 as security_monitor (p4, c1, k60).
+1782330679: No will message specified.
+1782330679: Client security_monitor negotiated TLSv1.3 cipher TLS_AES_256_GCM_SHA384
+1782330679: Sending CONNACK to security_monitor (0, 0)
+1782330679: Received SUBSCRIBE from security_monitor
+1782330679: 	# (QoS 0)
+1782330679: security_monitor 0 #
+1782330679: Sending SUBACK to security_monitor
+1782330693: New connection from ::1:52400 on port 8883.
+1782330693: New client connected from ::1:52400 as temperature_sensor (p4, c1, k60).
+1782330693: No will message specified.
+1782330693: Client temperature_sensor negotiated TLSv1.2 cipher ECDHE-RSA-AES256-GCM-SHA384
+1782330693: Sending CONNACK to temperature_sensor (0, 0)
+1782330693: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330693: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330694: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330694: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330695: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330695: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330696: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330696: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330697: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330697: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330698: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330698: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330699: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330699: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330700: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330700: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330701: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330701: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330702: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330702: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330703: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330703: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330704: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330704: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330705: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330705: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330706: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330706: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330707: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330707: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330708: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330708: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330709: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330709: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330710: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330710: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330711: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330711: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330712: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330712: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330713: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330713: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330714: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330714: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330715: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330715: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330716: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330716: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330717: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330717: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330718: Received PINGREQ from auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330718: Sending PINGRESP to auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330718: Received PUBLISH from temperature_sensor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330718: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'home/temperature_sensor', ... (54 bytes))
+1782330719: Client temperature_sensor [::1:52400] disconnected: connection closed by client.
+1782330719: Client temperature_sensor [::1:52400] disconnected: connection closed by client.
+1782330739: Received PINGREQ from security_monitor
+1782330739: Sending PINGRESP to security_monitor
+1782330753: New connection from ::1:52452 on port 8883.
+1782330753: New client connected from ::1:52452 as sensor1 (p4, c1, k60).
+1782330753: No will message specified.
+1782330753: Client sensor1 negotiated TLSv1.2 cipher ECDHE-RSA-AES256-GCM-SHA384
+1782330753: Sending CONNACK to sensor1 (0, 0)
+1782330753: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330753: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330754: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330754: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330755: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330755: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330756: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330756: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330757: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330757: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330758: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330758: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330759: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330759: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330760: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330760: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330761: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330761: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330762: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330762: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330763: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330763: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330764: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330764: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330765: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330765: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330766: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330766: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330767: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330767: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330768: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330768: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330769: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330769: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330770: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330770: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330771: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330771: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330772: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330772: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330773: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330773: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330774: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330774: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330775: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330775: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330776: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330776: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330777: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330777: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330778: Received PINGREQ from auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330778: Sending PINGRESP to auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330778: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330778: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330779: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330779: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330780: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330780: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330781: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330781: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330782: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330782: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330783: Received PUBLISH from sensor1 (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330783: Sending PUBLISH to security_monitor (d0, q0, r0, m0, 'test/topic', ... (67 bytes))
+1782330784: Client sensor1 [::1:52452] disconnected: connection closed by client.
+1782330784: Client sensor1 [::1:52452] disconnected: connection closed by client.
+1782330800: Received PINGREQ from security_monitor
+1782330800: Sending PINGRESP to security_monitor
+1782330821: OpenSSL Error while trying to get the error[0]: error:0A000126:SSL routines::unexpected eof while reading
+1782330821: Client security_monitor [::1:52398] disconnected: connection closed by client.
+1782330821: Client security_monitor [::1:52398] disconnected: connection closed by client.
+1782330838: Received PINGREQ from auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330838: Sending PINGRESP to auto-AC12E1CE-4668-336E-3385-E4E1A14832EF
+1782330863: mosquitto version 2.1.2 terminating
