@@ -100,8 +100,9 @@ def on_message(client, userdata, msg):
 
     try:
         payload = json.loads(msg.payload.decode())
+        print(payload)
     except:
-        alert(device, "MessageInjection", "Critical")
+        alert(client, "MessageInjection", "Critical")
         return
 
     device = payload.get("device_id")

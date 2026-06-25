@@ -1,0 +1,9 @@
+{"timestamp": 1782408466, "client_id": "motion_sensor", "ip": "::1:63426", "action": "Connects"}
+{"timestamp": 1782408468, "client_id": "sensor1", "ip": "::1:63433", "action": "Connects"}
+{"timestamp": 1782408471, "client_id": "air_quality_sensor", "ip": "::1:63444", "action": "Connects"}
+{"timestamp": 1782408474, "client_id": "temperature_sensor", "ip": "::1:63463", "action": "Connects"}
+{"timestamp": 1782408494, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782408498, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782408502, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782408506, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782408537, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}

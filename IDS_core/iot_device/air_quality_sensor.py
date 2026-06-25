@@ -5,7 +5,7 @@ import time
 import random
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent.parent
+BASE = Path(__file__).resolve().parent.parent.parent
 CA = BASE / "Certs" / "ca.crt"
 
 BROKER = "localhost"

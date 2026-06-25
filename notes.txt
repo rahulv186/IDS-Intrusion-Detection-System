@@ -1,0 +1,4 @@
+To start broker
+
+mosquitto -c ~/Certs/mosquitto.conf -v
+

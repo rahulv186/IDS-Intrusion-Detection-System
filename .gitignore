@@ -8,4 +8,4 @@ node_modules/
 *.srl
 
 __pycache__/
-.idea/
+.idea/notes.txt

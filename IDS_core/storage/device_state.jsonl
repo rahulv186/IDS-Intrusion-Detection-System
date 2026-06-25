@@ -1,0 +1,32 @@
+{
+    "air_quality_sensor": {
+        "client_id": "air_quality_sensor",
+        "status": "disconnected",
+        "last_seen": "2026-06-25T17:28:22.734258+00:00",
+        "ip": null
+    },
+    "motion_sensor": {
+        "client_id": "motion_sensor",
+        "status": "disconnected",
+        "last_seen": "2026-06-25T17:28:18.700832+00:00",
+        "ip": null
+    },
+    "sensor1": {
+        "client_id": "sensor1",
+        "status": "disconnected",
+        "last_seen": "2026-06-25T17:28:14.666352+00:00",
+        "ip": null
+    },
+    "temperature_sensor": {
+        "client_id": "temperature_sensor",
+        "status": "disconnected",
+        "last_seen": "2026-06-25T17:28:26.761927+00:00",
+        "ip": null
+    },
+    "security_monitor": {
+        "client_id": "security_monitor",
+        "status": "disconnected",
+        "last_seen": "2026-06-25T17:28:57.996949+00:00",
+        "ip": null
+    }
+}
