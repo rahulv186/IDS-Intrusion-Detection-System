@@ -2,3 +2,34 @@ To start broker
 
 mosquitto -c ~/Certs/mosquitto.conf -v
 
+
+
+
+def detect_topic_abuse(device, topic):
+
+    profile = known_devices[device]
+
+    allowed = profile["topic"]
+
+    if topic != allowed:
+        alert(device, "Topic Abuse", "High")
+
+
+def detect_impersonation(device, client_id):
+
+    profile = known_devices[device]
+
+    clients = profile["clients"]
+
+    if client_id not in clients:
+
+        if clients:
+            alert(device, "Device Impersonation", "Critical")
+
+        clients.add(client_id)
+
+
+
+
+
+{'client_id': 'security_monitor', 'ip': '::1:53233', 'status': 'connected', 'last_seen': '2026-06-26T09:54:51.034067+00:00'}

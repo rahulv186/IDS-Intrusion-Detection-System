@@ -6,6 +6,9 @@ node_modules/
 *.crt
 *.csr
 *.srl
+*.log
+.jsonl
+.csv
 
 __pycache__/
 .idea/notes.txt

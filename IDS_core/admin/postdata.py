@@ -5,7 +5,6 @@ import requests
 BASE_URL = "http://localhost:5050"  # Change to your server URL
 
 def post_data(data, data_type):
-    print(data)
     # Map data types to API endpoints
     endpoints = {
         "monitor_log": "/api/monitor",

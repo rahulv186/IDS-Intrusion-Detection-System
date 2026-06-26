@@ -5,6 +5,9 @@ from datetime import datetime, UTC
 import pathlib
 import json
 
+from logger import threat_log
+from threat_detector import Reconnect_spam_detector
+
 # KEEPS TRACK OF CONNECTED DEVICES
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent.parent
@@ -46,7 +49,10 @@ def update_device(data):
         devices = {}
 
     client_id = data["client_id"]
-
+    connect_spam = Reconnect_spam_detector(data)
+    if connect_spam:
+        threat_log(client_id, connect_spam.get("type"), connect_spam)
+        pass
     devices[client_id] = {
         "client_id": client_id,
         "status": data["status"],
@@ -58,8 +64,6 @@ def update_device(data):
         json.dump(devices, f, indent=4)
 
     print(f"[STATE UPDATED] {client_id}")
-
-
 
 #     TRAFFIC LOGGER
     jsonData = {
@@ -87,7 +91,7 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
             continue
 
         line = line.strip()
-        print(f"[LOG] {line}")
+        # print(f"[LOG] {line}")
 
         connect = CONNECT_RE.search(line)
         if connect:
@@ -96,12 +100,12 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
 
             print(f"[CONNECTED] {client_id} from {ip}")
 
-            send_update({
-                "client_id": client_id,
-                "ip": ip,
-                "status": "connected",
-                "last_seen": now_utc()
-            })
+            # send_update({
+            #     "client_id": client_id,
+            #     "ip": ip,
+            #     "status": "connected",
+            #     "last_seen": now_utc()
+            # })
             update_device({
                 "client_id": client_id,
                 "ip": ip,
@@ -124,11 +128,11 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
             last_disconnect[key] = current_time
             print(f"[DISCONNECTED] {client_id}")
 
-            send_update({
-                "client_id": client_id,
-                "status": "disconnected",
-                "last_seen": now_utc()
-            })
+            # send_update({
+            #     "client_id": client_id,
+            #     "status": "disconnected",
+            #     "last_seen": now_utc()
+            # })
             update_device({
                 "client_id": client_id,
                 "status": "disconnected",

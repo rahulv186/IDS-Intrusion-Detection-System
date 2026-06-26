@@ -1,5 +1,4 @@
 import paho.mqtt.client as mqtt
-import ssl
 import json
 import time
 import random
@@ -18,7 +17,6 @@ client.tls_insecure_set(True)
 
 client.connect(BROKER, PORT)
 client.loop_start()   # keeps connection alive
-
 def flood():
     for _ in range(20):
         payload={"device_id":"sensor1","temperature":random.randint(20,40),"client_id":"flooder"}
