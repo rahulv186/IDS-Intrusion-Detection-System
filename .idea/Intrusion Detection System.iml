@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/IDS/venv/lib/python3.14/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IDS_core/venv/lib/python3.14/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IDS_core" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Certs" />
     </content>

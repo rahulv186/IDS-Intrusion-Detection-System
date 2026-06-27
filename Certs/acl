@@ -1,0 +1,14 @@
+user admin
+topic readwrite #
+
+user sensor01
+topic write home/air_quality
+
+user sensor02
+topic write home/temperature
+
+user sensor03
+topic write home/motion
+
+user sensor04
+topic write home/temperature

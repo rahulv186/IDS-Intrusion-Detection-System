@@ -2,31 +2,31 @@
     "air_quality_sensor": {
         "client_id": "air_quality_sensor",
         "status": "disconnected",
-        "last_seen": "2026-06-25T18:42:01.029789+00:00",
+        "last_seen": "2026-06-27T14:02:41.493043+00:00",
         "ip": null
     },
     "motion_sensor": {
         "client_id": "motion_sensor",
         "status": "disconnected",
-        "last_seen": "2026-06-25T18:41:53.954477+00:00",
+        "last_seen": "2026-06-27T14:02:41.448878+00:00",
         "ip": null
     },
     "sensor1": {
         "client_id": "sensor1",
         "status": "disconnected",
-        "last_seen": "2026-06-26T18:01:59.396148+00:00",
+        "last_seen": "2026-06-27T14:02:41.525838+00:00",
         "ip": null
     },
     "temperature_sensor": {
         "client_id": "temperature_sensor",
         "status": "disconnected",
-        "last_seen": "2026-06-26T07:49:40.136138+00:00",
+        "last_seen": "2026-06-27T14:02:41.414585+00:00",
         "ip": null
     },
     "security_monitor": {
         "client_id": "security_monitor",
         "status": "disconnected",
-        "last_seen": "2026-06-26T18:05:41.009924+00:00",
+        "last_seen": "2026-06-27T14:02:44.094846+00:00",
         "ip": null
     },
     "flooder": {
@@ -37,26 +37,14 @@
     },
     "reconnect_spam": {
         "client_id": "reconnect_spam",
-        "status": "disconnected",
-        "last_seen": "2026-06-26T16:00:18.274823+00:00",
-        "ip": null
-    },
-    "::1": {
-        "client_id": "::1",
-        "status": "disconnected",
-        "last_seen": "2026-06-26T17:36:16.962102+00:00",
-        "ip": null
+        "status": "connected",
+        "last_seen": "2026-06-27T13:39:01.411339+00:00",
+        "ip": "::1:62451"
     },
     "payload_anamoly": {
         "client_id": "payload_anamoly",
         "status": "disconnected",
-        "last_seen": "2026-06-26T18:03:00.841754+00:00",
-        "ip": null
-    },
-    "payload_anomaly": {
-        "client_id": "payload_anomaly",
-        "status": "disconnected",
-        "last_seen": "2026-06-26T17:45:37.425536+00:00",
+        "last_seen": "2026-06-27T13:37:32.727012+00:00",
         "ip": null
     }
 }

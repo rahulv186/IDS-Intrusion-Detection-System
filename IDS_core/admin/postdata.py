@@ -9,7 +9,7 @@ def post_data(data, data_type):
     endpoints = {
         "monitor_log": "/api/monitor",
         "device_status": "/api/device",
-        "alert": "/api/threats"
+        "threat": "/api/threats"
     }
 
     if data_type not in endpoints:

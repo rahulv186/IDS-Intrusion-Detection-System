@@ -13,10 +13,15 @@ BASE = Path(__file__).resolve().parent.parent.parent
 CA = BASE / "Certs" / "ca.crt"
 
 device_id = "temperature_sensor"
-topic = f"home/{device_id}"
+topic = f"home/temperature"
 
 client = mqtt.Client(client_id=device_id)
 client.tls_set(ca_certs=CA, tls_version=ssl.PROTOCOL_TLSv1_2)
+
+user = "sensor04"
+password = "sensor04"
+
+client.username_pw_set(username=user, password=password)
 client.connect(BROKER, PORT)
 
 while True:

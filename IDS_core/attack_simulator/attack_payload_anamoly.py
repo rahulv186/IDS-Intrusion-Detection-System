@@ -17,6 +17,10 @@ client.tls_set(
     ca_certs=CA,
     tls_version=ssl.PROTOCOL_TLSv1_2
 )
+client.username_pw_set(
+    username="attack01",
+    password="attack01"
+)
 client.connect(BROKER, PORT)
 while True:
     for i in range(30):

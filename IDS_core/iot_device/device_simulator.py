@@ -17,8 +17,13 @@ client.tls_set(
     ca_certs=CA,
     tls_version=ssl.PROTOCOL_TLSv1_2
 )
+
+user = "sensor02"
+password = "sensor02"
+
+client.username_pw_set(username=user, password=password)
 client.connect(BROKER, PORT)
 while True:
     payload={"device_id":device_id,"temperature":random.randint(20,40),"client_id":device_id}
-    client.publish("test/topic",json.dumps(payload))
+    client.publish("home/temperature",json.dumps(payload))
     time.sleep(1)

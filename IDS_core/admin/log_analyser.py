@@ -4,9 +4,8 @@ import requests
 from datetime import datetime, UTC
 import pathlib
 import json
-
+import threat_detector
 from logger import threat_log
-from threat_detector import Reconnect_spam_detector
 
 # KEEPS TRACK OF CONNECTED DEVICES
 
@@ -14,16 +13,21 @@ BASE_DIR = pathlib.Path(__file__).resolve().parent.parent.parent
 LOG_FILE = f"{BASE_DIR}/IDS_core/storage/mosquitto.log"
 API = "http://localhost:5050/api/devices"
 
+
 CONNECT_RE = re.compile(
     r"New client connected from (?P<ip>\S+) as (?P<client_id>[^\s(]+)",
     re.IGNORECASE
 )
 
 DISCONNECT_RE = re.compile(
-    r"Client\s+(?P<client_id>[^\s]+)(?:\s+\[[^\]]+\])?\s+disconnected\b.*",
+    r"Client\s+(?P<client_id>[^\s]+)\s+\[(?P<ip>[^\]]+)\]\s+disconnected:\s+(?P<reason>.+)",
     re.IGNORECASE
 )
 
+DENIED_PUBLISH_RE = re.compile(
+    r"Denied\s+PUBLISH\s+from\s+(?P<client_id>[^\s]+)\s+\((?P<flags>[^,]+.*?),\s+'(?P<topic>[^']+)'.*\((?P<size>\d+)\s+bytes\)\)",
+    re.IGNORECASE
+)
 
 def now_utc():
     return datetime.now(UTC).isoformat()
@@ -42,17 +46,31 @@ def send_update(data):
         print(f"[ERROR] Failed to update DB: {e}")
 
 def update_device(data):
+
+    client_id = data["client_id"]
+    connect_spam = threat_detector.Reconnect_spam_detector(data)
+    if connect_spam:
+        threat_log(client_id, connect_spam.get("type"), connect_spam)
+        pass
+
+    if data["status"] == "Auth_Failed":
+        jsonData = {
+            "timestamp": int(time.time()),
+            "client_id": client_id,
+            "ip": data.get("ip"),
+            "action": "Authentication Denied"
+        }
+        with open(logfile, "a") as f:
+            f.write(json.dumps(jsonData) + "\n")
+        return
+
     try:
         with open(file, "r") as f:
             devices = json.load(f)
     except:
         devices = {}
 
-    client_id = data["client_id"]
-    connect_spam = Reconnect_spam_detector(data)
-    if connect_spam:
-        threat_log(client_id, connect_spam.get("type"), connect_spam)
-        pass
+
     devices[client_id] = {
         "client_id": client_id,
         "status": data["status"],
@@ -62,6 +80,7 @@ def update_device(data):
 
     with open(file, "w") as f:
         json.dump(devices, f, indent=4)
+
 
     print(f"[STATE UPDATED] {client_id}")
 
@@ -100,12 +119,12 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
 
             print(f"[CONNECTED] {client_id} from {ip}")
 
-            # send_update({
-            #     "client_id": client_id,
-            #     "ip": ip,
-            #     "status": "connected",
-            #     "last_seen": now_utc()
-            # })
+            send_update({
+                "client_id": client_id,
+                "ip": ip,
+                "status": "connected",
+                "last_seen": now_utc()
+            })
             update_device({
                 "client_id": client_id,
                 "ip": ip,
@@ -118,8 +137,26 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
         if disconnect:
             client_id = disconnect.group("client_id").strip()
 
+            ip = disconnect.group("ip")
+
             key = client_id
             current_time = int(time.time())
+
+
+            if disconnect.group("reason").strip() == "not authorised.":
+                print("[DISCONNECTED] Reason:", disconnect.group("reason").strip())
+
+                update_device({
+                    "client_id": client_id,
+                    "ip": ip,
+                    "status": "Auth_Failed",
+                    "last_seen": now_utc()
+                })
+
+
+                continue
+
+
 
             if key in last_disconnect:
                 if current_time - last_disconnect[key] < 2:
@@ -128,11 +165,11 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
             last_disconnect[key] = current_time
             print(f"[DISCONNECTED] {client_id}")
 
-            # send_update({
-            #     "client_id": client_id,
-            #     "status": "disconnected",
-            #     "last_seen": now_utc()
-            # })
+            send_update({
+                "client_id": client_id,
+                "status": "disconnected",
+                "last_seen": now_utc()
+            })
             update_device({
                 "client_id": client_id,
                 "status": "disconnected",
@@ -145,3 +182,24 @@ with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
 
         if "OpenSSL Error" in line:
             print("[WARNING] SSL closed unexpectedly, but no client_id found")
+
+
+        denied_publish = DENIED_PUBLISH_RE.search(line)
+        if denied_publish:
+            try:
+                with open(file, "r") as g:
+                    devices = json.load(g)
+            except:
+                print("[DEBUG] File not found:", file)
+
+            ip = devices[client_id]["ip"]
+            denied_client_id = denied_publish.group("client_id").strip()
+            topic = denied_publish.group("topic").strip()
+            threat = {
+                "client_id": client_id,
+                "ip": ip,
+                "flags": denied_publish.group("flags").strip(),
+                "topic": topic,
+                "size": denied_publish.group("size").strip(),
+            }
+            threat_log(denied_client_id, "TOPIC_ABUSE", threat, topic=topic)

@@ -21,6 +21,8 @@ for i in range(RECONNECTS):
         cert_reqs=ssl.CERT_NONE
     )
 
+    client.username_pw_set(username="attack02", password="attack02")
+
     try:
         client.connect(
             BROKER,

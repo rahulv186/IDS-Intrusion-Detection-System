@@ -4,6 +4,7 @@ import time
 DDOS_WINDOW = 2     # 10 CONNECTION / 2 SEC
 DDOS_LIMIT = 10
 counter = defaultdict(list)
+
 def DDOS_detector(payload):
     now = time.time()
     client_id = payload.get("client_id")
@@ -38,9 +39,14 @@ def Reconnect_spam_detector(payload):
         t for t in history[client_id]
         if now - t <= SPAM_WINDOW
     ]
-    print("RECONNECT CHECK HAPPENING")
     if len(history[client_id]) > SPAM_LIMIT:
-        print("RECONNECT SPAM DETECTED")
+
+        if payload["status"] == "Auth_Failed":
+            return {
+                "type": "BRUTEFORCE_ATTACK",
+                "client_id": client_id,
+                "IP": payload.get("ip"),
+            }
         return {
             "type": "CONNECT_SPAM",
             "client_id": client_id,
@@ -56,8 +62,6 @@ def Detect_Payload_Size_Anamoly(payload, payload_size):
     avg = baseline_sizes.get(client_id, payload_size)
 
     baseline_sizes[client_id] = ( avg * 0.9 + payload_size * 0.1 )
-    print(baseline_sizes[client_id])
-    print(avg)
     if payload_size > baseline_sizes[client_id] * 2 or payload_size < baseline_sizes[client_id] * 0.5:
         return {
             "type": "PAYLOAD_SIZE_ANAMOLY",
