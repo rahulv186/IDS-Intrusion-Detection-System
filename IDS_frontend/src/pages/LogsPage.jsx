@@ -44,9 +44,9 @@ export default function LogsPage() {
 
   const severityClass = (log) => {
     const s = (log.severity ?? log.level ?? '').toString().toLowerCase()
-    if (s === 'critical' || s === 'error') return 'bg-red-100 dark:bg-red-900/50 text-red-700 dark:text-red-300'
-    if (s === 'warn' || s === 'warning') return 'bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300'
-    if (s === 'info') return 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300'
+    if (s === 'High' || s === 'error') return 'bg-red-100 dark:bg-red-900/50 text-red-700 dark:text-red-300'
+    if (s === 'Medium' || s === 'warning') return 'bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300'
+    if (s === 'Low') return 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300'
     return 'bg-gray-100 dark:bg-gray-700/50 text-gray-700 dark:text-gray-300'
   }
 

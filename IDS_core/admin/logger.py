@@ -7,12 +7,13 @@ file = "../storage/events.jsonl"
 threat_log_file = "../storage/alerts.jsonl"
 
 threatDB = {
-    "MQTT_FLOOD":"DDOS Detected",
-    "CONNECT_SPAM":"Reconnect Spam Detected",
-    "PAYLOAD_SIZE_ANAMOLY":"Unsual Payload Size Spike Detected",
-    "BRUTEFORCE_ATTACK":"BruteForce attack Detected",
-    "TOPIC_ABUSE":"Unauthorized Access of Topic Attempted",
-    "STATE_BYPASS":"Offline Publisher Detected"
+    "MQTT_FLOOD": {"desc" :"DDOS Detected" , "severity":"High"},
+    "CONNECT_SPAM": {"desc":"Reconnect Spam Detected" , "severity":"Medium"},
+    "PAYLOAD_SIZE_ANAMOLY":{"desc" :"Unsual Payload Size Spike Detected" , "severity":"Medium"},
+    "BRUTEFORCE_ATTACK":{"desc" :"BruteForce attack Detected", "severity":"High"},
+    "TOPIC_ABUSE":{"desc" :"Unauthorized Access of Topic Attempted" , "severity":"Medium"},
+    "STATE_BYPASS":{"desc" :"Offline Publisher Detected" , "severity":"High"},
+    "IP_SPOOFING":{"desc":"Same Client Connected in Different IP", "severity":"High"},
 }
 
 
@@ -34,16 +35,17 @@ def log(device, topic, payload):
     with open(file, "a") as f:
         f.write(json.dumps(jsonData) + "\n")
 
-def threat_log(client_id, threat_type = None, threat = None, payload = None, topic = None):
+def threat_log(client_id, threat_type = None, threat = None, payload = None, topic = None, ip = None):
     threat_json_data = {
         "timestamp": int(time.time()),
         "client_id": client_id,
+        "ip" : ip,
         "topic": topic,
         "threat_type": threat_type,
-        "threat_details": threatDB[threat_type],
+        "severity": threatDB[threat_type]["severity"],
+        "threat_details": threatDB[threat_type]["desc"],
         "raw_payload": payload,
         "attack_type":threat_type,
-        "severity":"High",
     }
 
     post_data(threat_json_data, "threat")

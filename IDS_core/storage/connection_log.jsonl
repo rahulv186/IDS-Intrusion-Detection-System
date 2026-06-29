@@ -536,3 +536,180 @@
 {"timestamp": 1782568961, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
 {"timestamp": 1782568961, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
 {"timestamp": 1782568964, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782619336, "client_id": "security_monitor", "ip": "::1:50214", "action": "Connects"}
+{"timestamp": 1782619405, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782619408, "client_id": "security_monitor", "ip": "::1:50262", "action": "Connects"}
+{"timestamp": 1782620534, "client_id": "temperature_sensor", "ip": "::1:50357", "action": "Connects"}
+{"timestamp": 1782620534, "client_id": "motion_sensor", "ip": "::1:50358", "action": "Connects"}
+{"timestamp": 1782620534, "client_id": "air_quality_sensor", "ip": "::1:50359", "action": "Connects"}
+{"timestamp": 1782620534, "client_id": "sensor1", "ip": "::1:50360", "action": "Connects"}
+{"timestamp": 1782620575, "client_id": "bruteforcer", "ip": "::1:50544", "action": "Authentication Denied"}
+{"timestamp": 1782620576, "client_id": "bruteforcer", "ip": "::1:50551", "action": "Authentication Denied"}
+{"timestamp": 1782620577, "client_id": "bruteforcer", "ip": "::1:50558", "action": "Authentication Denied"}
+{"timestamp": 1782620578, "client_id": "bruteforcer", "ip": "::1:50565", "action": "Authentication Denied"}
+{"timestamp": 1782620579, "client_id": "bruteforcer", "ip": "::1:50572", "action": "Authentication Denied"}
+{"timestamp": 1782620580, "client_id": "bruteforcer", "ip": "::1:50579", "action": "Authentication Denied"}
+{"timestamp": 1782620581, "client_id": "bruteforcer", "ip": "::1:50587", "action": "Authentication Denied"}
+{"timestamp": 1782620582, "client_id": "bruteforcer", "ip": "::1:50595", "action": "Authentication Denied"}
+{"timestamp": 1782620583, "client_id": "bruteforcer", "ip": "::1:50603", "action": "Authentication Denied"}
+{"timestamp": 1782620584, "client_id": "bruteforcer", "ip": "::1:50611", "action": "Authentication Denied"}
+{"timestamp": 1782620586, "client_id": "bruteforcer", "ip": "::1:50620", "action": "Authentication Denied"}
+{"timestamp": 1782620586, "client_id": "bruteforcer", "ip": "::1:50628", "action": "Authentication Denied"}
+{"timestamp": 1782620587, "client_id": "bruteforcer", "ip": "::1:50636", "action": "Authentication Denied"}
+{"timestamp": 1782620588, "client_id": "bruteforcer", "ip": "::1:50644", "action": "Authentication Denied"}
+{"timestamp": 1782620589, "client_id": "bruteforcer", "ip": "::1:50652", "action": "Authentication Denied"}
+{"timestamp": 1782620590, "client_id": "bruteforcer", "ip": "::1:50661", "action": "Authentication Denied"}
+{"timestamp": 1782620591, "client_id": "bruteforcer", "ip": "::1:50669", "action": "Authentication Denied"}
+{"timestamp": 1782620592, "client_id": "bruteforcer", "ip": "::1:50677", "action": "Authentication Denied"}
+{"timestamp": 1782620593, "client_id": "bruteforcer", "ip": "::1:50685", "action": "Authentication Denied"}
+{"timestamp": 1782620594, "client_id": "bruteforcer", "ip": "::1:50693", "action": "Authentication Denied"}
+{"timestamp": 1782620613, "client_id": "payload_anamoly", "ip": "::1:50773", "action": "Connects"}
+{"timestamp": 1782620651, "client_id": "payload_anamoly", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782620681, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782620681, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782620681, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782620681, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782621954, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782722882, "client_id": "security_monitor", "ip": "::1:54516", "action": "Connects"}
+{"timestamp": 1782722908, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723008, "client_id": "security_monitor", "ip": "::1:54566", "action": "Connects"}
+{"timestamp": 1782723010, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723050, "client_id": "security_monitor", "ip": "::1:54574", "action": "Connects"}
+{"timestamp": 1782723204, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723204, "client_id": "security_monitor", "ip": "::1:54589", "action": "Connects"}
+{"timestamp": 1782723216, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723256, "client_id": "security_monitor", "ip": "::1:54602", "action": "Connects"}
+{"timestamp": 1782723265, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723374, "client_id": "security_monitor", "ip": "::1:54627", "action": "Connects"}
+{"timestamp": 1782723383, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723393, "client_id": "security_monitor", "ip": "::1:54633", "action": "Connects"}
+{"timestamp": 1782723451, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723452, "client_id": "security_monitor", "ip": "::1:54643", "action": "Connects"}
+{"timestamp": 1782723461, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723465, "client_id": "security_monitor", "ip": "::1:54650", "action": "Connects"}
+{"timestamp": 1782723478, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782723818, "client_id": "security_monitor", "ip": "::1:54808", "action": "Connects"}
+{"timestamp": 1782723823, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782724585, "client_id": "security_monitor", "ip": "::1:55022", "action": "Connects"}
+{"timestamp": 1782724602, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782725346, "client_id": "security_monitor", "ip": "::1:55152", "action": "Connects"}
+{"timestamp": 1782725396, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782725404, "client_id": "security_monitor", "ip": "::1:55222", "action": "Connects"}
+{"timestamp": 1782725420, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782725435, "client_id": "security_monitor", "ip": "::1:55263", "action": "Connects"}
+{"timestamp": 1782725443, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782725451, "client_id": "security_monitor", "ip": "::1:55286", "action": "Connects"}
+{"timestamp": 1782725459, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782725550, "client_id": "security_monitor", "ip": "::1:55403", "action": "Connects"}
+{"timestamp": 1782726024, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726024, "client_id": "security_monitor", "ip": "::1:55997", "action": "Connects"}
+{"timestamp": 1782726091, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726106, "client_id": "security_monitor", "ip": "::1:56093", "action": "Connects"}
+{"timestamp": 1782726618, "client_id": "security_monitor", "ip": "::1:56374", "action": "Connects"}
+{"timestamp": 1782726649, "client_id": "air_quality_sensor", "ip": "::1:56386", "action": "Connects"}
+{"timestamp": 1782726649, "client_id": "motion_sensor", "ip": "::1:56387", "action": "Connects"}
+{"timestamp": 1782726649, "client_id": "sensor1", "ip": "::1:56388", "action": "Connects"}
+{"timestamp": 1782726649, "client_id": "temperature_sensor", "ip": "::1:56389", "action": "Connects"}
+{"timestamp": 1782726661, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726678, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726678, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726678, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726678, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726678, "client_id": "air_quality_sensor", "ip": "::1:56458", "action": "Connects"}
+{"timestamp": 1782726678, "client_id": "temperature_sensor", "ip": "::1:56456", "action": "Connects"}
+{"timestamp": 1782726678, "client_id": "motion_sensor", "ip": "::1:56457", "action": "Connects"}
+{"timestamp": 1782726678, "client_id": "sensor1", "ip": "::1:56459", "action": "Connects"}
+{"timestamp": 1782726682, "client_id": "security_monitor", "ip": "::1:56466", "action": "Connects"}
+{"timestamp": 1782726697, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726697, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726698, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726698, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782726733, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782727086, "client_id": "security_monitor", "ip": "::1:56620", "action": "Connects"}
+{"timestamp": 1782727094, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782740662, "client_id": "security_monitor", "ip": "::1:52393", "action": "Connects"}
+{"timestamp": 1782740828, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782740831, "client_id": "security_monitor", "ip": "::1:52453", "action": "Connects"}
+{"timestamp": 1782740866, "client_id": "sensor1", "ip": "::1:52460", "action": "Connects"}
+{"timestamp": 1782740866, "client_id": "motion_sensor", "ip": "::1:52459", "action": "Connects"}
+{"timestamp": 1782740866, "client_id": "temperature_sensor", "ip": "::1:52461", "action": "Connects"}
+{"timestamp": 1782740866, "client_id": "air_quality_sensor", "ip": "::1:52462", "action": "Connects"}
+{"timestamp": 1782740875, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782740875, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782740875, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782740875, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741241, "client_id": "security_monitor", "ip": "::1:52547", "action": "Connects"}
+{"timestamp": 1782741249, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741394, "client_id": "security_monitor", "ip": "::1:52565", "action": "Connects"}
+{"timestamp": 1782741820, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741848, "client_id": "security_monitor", "ip": "::1:52621", "action": "Connects"}
+{"timestamp": 1782741894, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741906, "client_id": "motion_sensor", "ip": "::1:52629", "action": "Connects"}
+{"timestamp": 1782741906, "client_id": "air_quality_sensor", "ip": "::1:52631", "action": "Connects"}
+{"timestamp": 1782741906, "client_id": "temperature_sensor", "ip": "::1:52630", "action": "Connects"}
+{"timestamp": 1782741906, "client_id": "sensor1", "ip": "::1:52632", "action": "Connects"}
+{"timestamp": 1782741920, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741920, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741920, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782741920, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782745778, "client_id": "security_monitor", "ip": "::1:53013", "action": "Connects"}
+{"timestamp": 1782745888, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782745894, "client_id": "security_monitor", "ip": "::1:53033", "action": "Connects"}
+{"timestamp": 1782745920, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782745923, "client_id": "security_monitor", "ip": "::1:53047", "action": "Connects"}
+{"timestamp": 1782746045, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782746054, "client_id": "security_monitor", "ip": "::1:53070", "action": "Connects"}
+{"timestamp": 1782746298, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782746300, "client_id": "security_monitor", "ip": "::1:53106", "action": "Connects"}
+{"timestamp": 1782748909, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782748910, "client_id": "security_monitor", "ip": "::1:53517", "action": "Connects"}
+{"timestamp": 1782749201, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782749203, "client_id": "security_monitor", "ip": "::1:53569", "action": "Connects"}
+{"timestamp": 1782749848, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782750257, "client_id": "security_monitor", "ip": "::1:53683", "action": "Connects"}
+{"timestamp": 1782750265, "client_id": "air_quality_sensor", "ip": "::1:53686", "action": "Connects"}
+{"timestamp": 1782750277, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782750280, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782752998, "client_id": "security_monitor", "ip": "::1:55023", "action": "Connects"}
+{"timestamp": 1782753052, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753053, "client_id": "security_monitor", "ip": "::1:55068", "action": "Connects"}
+{"timestamp": 1782753148, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753148, "client_id": "security_monitor", "ip": "::1:55103", "action": "Connects"}
+{"timestamp": 1782753306, "client_id": "temperature_sensor", "ip": "::1:55155", "action": "Connects"}
+{"timestamp": 1782753306, "client_id": "sensor1", "ip": "::1:55156", "action": "Connects"}
+{"timestamp": 1782753306, "client_id": "motion_sensor", "ip": "::1:55154", "action": "Connects"}
+{"timestamp": 1782753306, "client_id": "air_quality_sensor", "ip": "::1:55157", "action": "Connects"}
+{"timestamp": 1782753376, "client_id": "bruteforcer", "ip": "::1:55457", "action": "Authentication Denied"}
+{"timestamp": 1782753377, "client_id": "bruteforcer", "ip": "::1:55464", "action": "Authentication Denied"}
+{"timestamp": 1782753378, "client_id": "bruteforcer", "ip": "::1:55471", "action": "Authentication Denied"}
+{"timestamp": 1782753379, "client_id": "bruteforcer", "ip": "::1:55478", "action": "Authentication Denied"}
+{"timestamp": 1782753380, "client_id": "bruteforcer", "ip": "::1:55485", "action": "Authentication Denied"}
+{"timestamp": 1782753381, "client_id": "bruteforcer", "ip": "::1:55492", "action": "Authentication Denied"}
+{"timestamp": 1782753382, "client_id": "bruteforcer", "ip": "::1:55500", "action": "Authentication Denied"}
+{"timestamp": 1782753383, "client_id": "bruteforcer", "ip": "::1:55508", "action": "Authentication Denied"}
+{"timestamp": 1782753384, "client_id": "bruteforcer", "ip": "::1:55516", "action": "Authentication Denied"}
+{"timestamp": 1782753385, "client_id": "bruteforcer", "ip": "::1:55524", "action": "Authentication Denied"}
+{"timestamp": 1782753386, "client_id": "bruteforcer", "ip": "::1:55532", "action": "Authentication Denied"}
+{"timestamp": 1782753387, "client_id": "bruteforcer", "ip": "::1:55540", "action": "Authentication Denied"}
+{"timestamp": 1782753388, "client_id": "bruteforcer", "ip": "::1:55548", "action": "Authentication Denied"}
+{"timestamp": 1782753389, "client_id": "bruteforcer", "ip": "::1:55557", "action": "Authentication Denied"}
+{"timestamp": 1782753390, "client_id": "bruteforcer", "ip": "::1:55566", "action": "Authentication Denied"}
+{"timestamp": 1782753391, "client_id": "bruteforcer", "ip": "::1:55574", "action": "Authentication Denied"}
+{"timestamp": 1782753392, "client_id": "bruteforcer", "ip": "::1:55582", "action": "Authentication Denied"}
+{"timestamp": 1782753392, "client_id": "bruteforcer", "ip": "::1:55590", "action": "Authentication Denied"}
+{"timestamp": 1782753393, "client_id": "bruteforcer", "ip": "::1:55598", "action": "Authentication Denied"}
+{"timestamp": 1782753395, "client_id": "bruteforcer", "ip": "::1:55606", "action": "Authentication Denied"}
+{"timestamp": 1782753409, "client_id": "flooder", "ip": "::1:55668", "action": "Authentication Denied"}
+{"timestamp": 1782753410, "client_id": "flooder", "ip": "::1:55675", "action": "Authentication Denied"}
+{"timestamp": 1782753412, "client_id": "flooder", "ip": "::1:55684", "action": "Authentication Denied"}
+{"timestamp": 1782753416, "client_id": "flooder", "ip": "::1:55701", "action": "Authentication Denied"}
+{"timestamp": 1782753424, "client_id": "flooder", "ip": "::1:55734", "action": "Authentication Denied"}
+{"timestamp": 1782753428, "client_id": "payload_anamoly", "ip": "::1:55751", "action": "Connects"}
+{"timestamp": 1782753440, "client_id": "flooder", "ip": "::1:55817", "action": "Authentication Denied"}
+{"timestamp": 1782753472, "client_id": "flooder", "ip": "::1:55984", "action": "Authentication Denied"}
+{"timestamp": 1782753501, "client_id": "payload_anamoly", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753519, "client_id": "temperature_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753519, "client_id": "sensor1", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753519, "client_id": "air_quality_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753519, "client_id": "motion_sensor", "ip": null, "action": "Disconnects"}
+{"timestamp": 1782753556, "client_id": "security_monitor", "ip": null, "action": "Disconnects"}

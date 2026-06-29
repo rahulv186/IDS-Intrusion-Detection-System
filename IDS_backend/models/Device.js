@@ -9,6 +9,9 @@ const DeviceSchema = new mongoose.Schema({
   ip: {
     type: String,
   },
+  old_ip:{
+    type: String,
+  },
   status: {
     type: String,
     enum: ["connected", "disconnected"],

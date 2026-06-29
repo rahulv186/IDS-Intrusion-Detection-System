@@ -1,9 +1,15 @@
 from collections import defaultdict
 import time
+import json
+from datetime import datetime
+
+from admin.logger import threat_log
 
 DDOS_WINDOW = 2     # 10 CONNECTION / 2 SEC
 DDOS_LIMIT = 10
 counter = defaultdict(list)
+file = "../storage/device_state.jsonl"
+
 
 def DDOS_detector(payload):
     now = time.time()
@@ -18,8 +24,12 @@ def DDOS_detector(payload):
     rate = len(counter[client_id]) / dur
 
     if len(counter[client_id]) > DDOS_LIMIT:
+        with open(file, "r") as f:
+            devices = json.load(f)
+        ip = devices[client_id]["ip"]
         return {
             "type": "MQTT_FLOOD",
+            "ip": ip,
             "client_id": client_id,
             "rate/sec": rate
         }
@@ -45,12 +55,12 @@ def Reconnect_spam_detector(payload):
             return {
                 "type": "BRUTEFORCE_ATTACK",
                 "client_id": client_id,
-                "IP": payload.get("ip"),
+                "ip": payload.get("ip"),
             }
         return {
             "type": "CONNECT_SPAM",
             "client_id": client_id,
-            "IP": payload.get("ip"),
+            "ip": payload.get("ip"),
         }
 
     return None
@@ -63,11 +73,51 @@ def Detect_Payload_Size_Anamoly(payload, payload_size):
 
     baseline_sizes[client_id] = ( avg * 0.9 + payload_size * 0.1 )
     if payload_size > baseline_sizes[client_id] * 2 or payload_size < baseline_sizes[client_id] * 0.5:
+        with open(file, "r") as f:
+            devices = json.load(f)
         return {
             "type": "PAYLOAD_SIZE_ANAMOLY",
-            "IP": payload.get("ip"),
+            "ip": payload.get("ip"),
             "Expected Avg":baseline_sizes[client_id],
             "Actual Payload size": payload_size
         }
+
+    return None
+
+
+from datetime import datetime
+import time
+import json
+
+
+def Detect_IP_Spoofing(client_id, ip):
+
+    now = time.time()
+
+    with open(file, "r") as f:
+        devices = json.load(f)
+
+    device = devices.get(client_id)
+
+    if not device:
+        return None
+
+    if not device.get("old_ip"):
+        return None
+
+    last_seen = datetime.fromisoformat(
+        device["last_seen"]
+    ).timestamp()
+
+    if now - last_seen < 60:
+
+        if device["old_ip"] != ip:
+
+            return {
+                "type": "IP_SPOOFING",
+                "client_id": client_id,
+                "ip": ip,
+                "old_ip": device["old_ip"],
+            }
 
     return None

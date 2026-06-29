@@ -36,15 +36,16 @@ def on_message(client, userdata, msg):
     logger.log(device, msg.topic, payload) #LOG THE EVENT BEFORE START THE CHECKS
 
     # PAYLOAD SIZE ANALOMY DETECTION
+    print(payload)
     payload_threat = Detect_Payload_Size_Anamoly(payload, payload_size)
     if payload_threat:
-        logger.threat_log(device, payload_threat.get("type"), payload_threat, payload, msg.topic)
+        logger.threat_log(device, payload_threat.get("type"), payload_threat, payload, msg.topic, ip=payload_threat["ip"])
         print(f"[THREAT] : {payload_threat.get('type')}")
 
     # DDOS_detector(payload)
     ddos_threat = DDOS_detector(payload)
     if ddos_threat:
-        logger.threat_log(device, ddos_threat.get("type"), ddos_threat, payload, msg.topic)
+        logger.threat_log(device, ddos_threat.get("type"), ddos_threat, payload, msg.topic, ip=ddos_threat["ip"])
         print(f"[THREAT] : {payload_threat.get('type')}")
 
 
